@@ -1,0 +1,31 @@
+module.exports = {
+	root: true,
+	extends: [
+		'@react-native-community',
+		'plugin:@typescript-eslint/eslint-recommended',
+		'plugin:@typescript-eslint/recommended',
+	],
+	rules: {
+		'no-console': 1,
+		'jsx-quotes': 0,
+		'jest/no-disabled-tests': 'warn',
+		'jest/no-focused-tests': 'error',
+		'jest/no-identical-title': 'error',
+		'jest/prefer-to-have-length': 'warn',
+		'jest/valid-expect': 'error',
+		'jest/no-done-callback': 0,
+		'@typescript-eslint/no-empty-function': 0,
+		'@typescript-eslint/explicit-module-boundary-types': 0,
+		'@typescript-eslint/ban-ts-comment': 0,
+		'@typescript-eslint/no-empty-interface': 0,
+		'@typescript-eslint/no-var-requires': 0,
+		'no-shadow': 'off',
+		'no-mixed-spaces-and-tabs': 'off',
+		'@typescript-eslint/no-shadow': ['error'],
+		'@typescript-eslint/no-non-null-assertion': 0,
+		'eslint-comments/no-unlimited-disable': 0,
+	},
+	env: {
+		jest: true,
+	},
+};

@@ -1,0 +1,10 @@
+{
+	"common": {
+		"cancel": "Cancel"
+	},
+	"error": {
+		"title": "Error has occurred",
+		"unknown": "Something went wrong",
+		"network": "Network error, please check your connection and try again."
+	}
+}
