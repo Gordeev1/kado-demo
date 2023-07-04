@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -18,19 +20,190 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kado</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>whatsapp</string>
-		<string>mailto</string>
-		<string>tg</string>
-		<string>instagram</string>
-		<string>instagram-stories</string>
-		<string>fb</string>
-		<string>facebook-stories</string>
+		<string>metamask</string>
+		<string>trust</string>
+		<string>safe</string>
+		<string>rainbow</string>
+		<string>uniswap</string>
+		<string>zerion</string>
+		<string>imtokenv2</string>
+		<string>argent</string>
+		<string>spot</string>
+		<string>omni</string>
+		<string>dfw</string>
+		<string>tpoutside</string>
+		<string>robinhood-wallet</string>
+		<string>frontier</string>
+		<string>blockchain-wallet</string>
+		<string>safepalwallet</string>
+		<string>bitkeep</string>
+		<string>zengo</string>
+		<string>oneinch</string>
+		<string>bnc</string>
+		<string>exodus</string>
+		<string>ledgerlive</string>
+		<string>mewwallet</string>
+		<string>awallet</string>
+		<string>keyring</string>
+		<string>lobstr</string>
+		<string>ontoprovider</string>
+		<string>mathwallet</string>
+		<string>unstoppabledomains</string>
+		<string>obvious</string>
+		<string>fireblocks-wc</string>
+		<string>ambire</string>
+		<string>internetmoney</string>
+		<string>walletnow</string>
+		<string>bitcoincom</string>
+		<string>wc</string>
+		<string>abc-wallet</string>
+		<string>arculuswc</string>
+		<string>cryptobrowser</string>
+		<string>huddln</string>
+		<string>verso</string>
+		<string>haha</string>
+		<string>modularwallet</string>
+		<string>link.kelp.finance</string>
+		<string>broearn</string>
+		<string>coinomi</string>
+		<string>ripio</string>
+		<string>myApp</string>
+		<string>mtwallet</string>
+		<string>metaCubeWallet</string>
+		<string>copiosa</string>
+		<string>libera</string>
+		<string>burrito</string>
+		<string>ancrypto</string>
+		<string>cypherwallet</string>
+		<string>enjinwallet</string>
+		<string>everspace</string>
+		<string>kriptomatapp</string>
+		<string>oxalus</string>
+		<string>wc</string>
+		<string>kwt</string>
+		<string>leapcosmos</string>
+		<string>islamiwallet</string>
+		<string>wirexwallet</string>
+		<string>essentials</string>
+		<string>visionwallet</string>
+		<string>celo</string>
+		<string>paraswap</string>
+		<string>ennowallet</string>
+		<string>loopring</string>
+		<string>linen</string>
+		<string>assure</string>
+		<string>floozwallet</string>
+		<string>core</string>
+		<string>zel</string>
+		<string>kleverwallet</string>
+		<string>edge</string>
+		<string>nefti</string>
+		<string>goldbit</string>
+		<string>coingrig</string>
+		<string>xfunwallet</string>
+		<string>ricewallet</string>
+		<string>ancrypto</string>
+		<string>oksewallet</string>
+		<string>aktionariat</string>
+		<string>huobiwallet</string>
+		<string>zeluswallet</string>
+		<string>talkapp</string>
+		<string>cardwallet</string>
+		<string>paybolt</string>
+		<string>dfwallet</string>
+		<string>com.arianee.wallet</string>
+		<string>slaviwallet</string>
+		<string>plasmawallet</string>
+		<string>iopay</string>
+		<string>defiantapp</string>
+		<string>co.theeasy.app</string>
+		<string>strikex</string>
+		<string>avacus</string>
+		<string>hideoutWallet</string>
+		<string>coolwallet</string>
+		<string>opto</string>
+		<string>tk</string>
+		<string>beewallet.app</string>
+		<string>pitaka</string>
+		<string>coinstats</string>
+		<string>ttmwalletapp</string>
+		<string>pltwallet</string>
+		<string>helix-id</string>
+		<string>airgap-wallet</string>
+		<string>qubic</string>
+		<string>earthwallet</string>
+		<string>metaone</string>
+		<string>bhcwallet</string>
+		<string>simplehold</string>
+		<string>minerva</string>
+		<string>volt</string>
+		<string>bobablocks</string>
+		<string>shinobi-wallet</string>
+		<string>kryptogo</string>
+		<string>autonomy-wc</string>
+		<string>bifrostwallet</string>
+		<string>vimwallet</string>
+		<string>freedom-wallet</string>
+		<string>wallet3</string>
+		<string>abra</string>
+		<string>wc</string>
+		<string>premawallet</string>
+		<string>onekey-wallet</string>
+		<string>slingshot</string>
+		<string>kriptonio</string>
+		<string>timeless-wallet</string>
+		<string>secux</string>
+		<string>bitski</string>
+		<string>streakk</string>
+		<string>okex</string>
+		<string>SaitaPro</string>
+		<string>lilico</string>
+		<string>hippowallet</string>
+		<string>cosmostation</string>
+		<string>bitizen</string>
+		<string>blocto</string>
+		<string>humblwallet</string>
+		<string>safemoon</string>
+		<string>com.wallet.passpay</string>
+		<string>ultimate</string>
+		<string>astrox</string>
+		<string>thorwallet</string>
+		<string>fizz</string>
+		<string>moneyunstoppable</string>
+		<string>com.arianee.wallet</string>
+		<string>stickyapp</string>
+		<string>coveylegends</string>
+		<string>klipwallet</string>
+		<string>coinstats</string>
+		<string>com.oice</string>
+		<string>krystalwallet</string>
+		<string>pillarwallet</string>
+		<string>HARTi</string>
+		<string>stasis</string>
+		<string>novawallet</string>
+		<string>dotted</string>
+		<string>foxwallet</string>
+		<string>haqq</string>
+		<string>tomiwallet</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -70,7 +243,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>CADisableMinimumFrameDurationOnPhone</key>
-	<true/>
 </dict>
 </plist>

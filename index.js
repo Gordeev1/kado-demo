@@ -1,5 +1,8 @@
 import { AppRegistry, LogBox, UIManager, Text, TextInput } from 'react-native';
 import 'react-native-gesture-handler';
+import 'react-native-get-random-values';
+import '@walletconnect/react-native-compat';
+import '@ethersproject/shims';
 import { enableScreens } from 'react-native-screens';
 import { name as appName } from './app.json';
 import { Root } from './src/root';
