@@ -1,11 +1,23 @@
 # Kado Demo
 
+## Preview
+
+
+
+https://github.com/Gordeev1/kado-demo/assets/15091860/656eff33-4ccf-43f8-98d6-42e853b4563b
+
+
+
 ## Setup
+
+-   Setup environment
+
+    https://reactnative.dev/docs/environment-setup
 
 -   Install dependencies
 
 ```sh
-npm i
+yarn install
 ```
 
 -   Install pods (make sure you are inside ios folder)
@@ -17,5 +29,6 @@ pod install
 -   Launch application
 
 ```sh
-npm run android / ios
+yarn run android / ios
 ```
+
