@@ -5,11 +5,17 @@ import { themeStyledUtils } from '@kado/libs/theme/styled/utils';
 import { IconComponentPropsInterface } from './component-props.interface';
 
 export const IconComponent: FunctionComponent<IconComponentPropsInterface> = ({
-	size = 16,
+	size = 22,
 	allowScaling = true,
 	...props
 }) => {
-	const { windowSize } = useTheme();
+	const { windowSize, colors } = useTheme();
 	const scaledSize = themeStyledUtils.scale(size)(windowSize);
-	return <MaterialIcons size={allowScaling ? scaledSize : size} {...props} />;
+	return (
+		<MaterialIcons
+			color={colors['icon-primary']}
+			size={allowScaling ? scaledSize : size}
+			{...props}
+		/>
+	);
 };

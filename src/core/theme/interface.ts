@@ -18,7 +18,9 @@ export interface CoreThemeInterface {
 		| 'button-secondary-background'
 		| 'button-secondary-label'
 		| 'button-thirdly-background'
-		| 'button-thirdly-label',
+		| 'button-thirdly-label'
+		| 'icon-primary'
+		| 'card-background',
 		string
 	>;
 	fontSize: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'xxxxl', [number, number]>;

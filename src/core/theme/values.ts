@@ -21,7 +21,6 @@ const palette = {
 	'grey-6-100': '#BABABA',
 	'grey-8-100': '#d5d6df',
 	'grey-8-10': '#d5d6df1A',
-	'grey-8-08': '#d5d6df14',
 
 	'red-3-100': '#cf4f61',
 	'red-5-100': '#de4646',
@@ -49,8 +48,10 @@ const darkTheme: CoreThemeInterface = {
 		'button-primary-label-inactive': palette['white-10-40'],
 		'button-secondary-background': palette['purple-7-20'],
 		'button-secondary-label': palette['purple-7-100'],
-		'button-thirdly-background': palette['grey-8-08'],
+		'button-thirdly-background': palette['grey-8-10'],
 		'button-thirdly-label': palette['grey-5-100'],
+		'icon-primary': palette['white-10-100'],
+		'card-background': palette['grey-8-10'],
 	},
 	spacing: {
 		s1: 3,
@@ -90,12 +91,7 @@ const darkTheme: CoreThemeInterface = {
 	},
 };
 
-const lightTheme: CoreThemeInterface = merge({}, darkTheme, {
-	colors: {
-		main: palette['dark-1-100'],
-		background: palette['white-10-100'],
-	},
-});
+const lightTheme: CoreThemeInterface = merge({}, darkTheme);
 
 export const coreThemeValues: Record<CoreThemeTypeEnum, CoreThemeInterface> = {
 	[CoreThemeTypeEnum.Light]: lightTheme,

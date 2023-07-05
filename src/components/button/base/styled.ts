@@ -91,6 +91,7 @@ export const ButtonBaseStyled = {
 					return `
 						padding-horizontal: ${themeStyledUtils.scale(p.theme.spacing.s2)(p)}px;
 						min-width: ${themeStyledUtils.scale(60)(p)}px;
+						max-width: ${themeStyledUtils.scale(120)(p)}px;
 					`;
 				case ButtonBaseSizeEnum.Circle:
 				case ButtonBaseSizeEnum.CircleCompact: {
@@ -103,6 +104,7 @@ export const ButtonBaseStyled = {
 	Label: styled(TypographyComponent).attrs({
 		size: 'sm',
 		numberOfLines: 1,
+		ellipsizeMode: 'middle',
 		variant: TypographyVariantEnum.Bold,
 	})<
 		SizePropsInterface & {
