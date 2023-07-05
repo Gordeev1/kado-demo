@@ -1,7 +1,6 @@
 import React, { forwardRef, PropsWithChildren } from 'react';
 import { useHeaderHeight } from '@react-navigation/elements';
 import { useTheme } from 'styled-components/native';
-import { libsPlatformUtils } from '@kado/libs/platform/utils';
 import { SceneMinimalStyled } from './styled';
 import { SceneMinimalComponentRefType } from './component-ref.type';
 import { SceneMinimalComponentPropsInterface } from './component-props.interface';
@@ -15,7 +14,7 @@ export const SceneMinimalComponent = forwardRef<
 	return (
 		<SceneMinimalStyled.KeyboardAvoidingView
 			behavior='padding'
-			enabled={libsPlatformUtils.isIOS && keyboardAvoiding}
+			enabled={keyboardAvoiding}
 			keyboardVerticalOffset={headerHeight - insets.bottom}>
 			<SceneMinimalStyled.ScrollView ref={ref} keyboardShouldPersistTaps='handled' {...props}>
 				{children}
