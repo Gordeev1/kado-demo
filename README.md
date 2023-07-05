@@ -4,7 +4,11 @@
 
 
 
-https://github.com/Gordeev1/kado-demo/assets/15091860/656eff33-4ccf-43f8-98d6-42e853b4563b
+
+
+https://github.com/Gordeev1/kado-demo/assets/15091860/30469eeb-63a2-4303-94b9-56cf9744d014
+
+
 
 
 
