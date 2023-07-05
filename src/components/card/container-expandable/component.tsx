@@ -32,7 +32,7 @@ export const CardContainerExpandableComponent: FC<CardContainerExpandableCompone
 
 		const icon = (
 			<SpacingComponent leftSpacing='s5' style={iconStyles}>
-				<IconComponent size={15} name='keyboard-arrow-down' />
+				<IconComponent name='keyboard-arrow-down' />
 			</SpacingComponent>
 		);
 
