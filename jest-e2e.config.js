@@ -1,11 +1,7 @@
 module.exports = {
-	rootDir: './',
-	testMatch: ['<rootDir>/e2e/**/*.spec.ts'],
-	maxWorkers: 1,
-	verbose: true,
+	testRunner: 'jest-circus/runner',
+	testEnvironment: './e2e/environment.js',
 	testTimeout: 300000,
-	reporters: ['detox/runners/jest/reporter'],
-	globalSetup: 'detox/runners/jest/globalSetup',
-	globalTeardown: 'detox/runners/jest/globalTeardown',
-	testEnvironment: 'detox/runners/jest/testEnvironment',
+	reporters: ['detox/runners/jest/streamlineReporter'],
+	verbose: true,
 };

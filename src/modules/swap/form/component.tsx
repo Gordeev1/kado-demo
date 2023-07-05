@@ -90,7 +90,10 @@ export const SwapFormComponent = () => {
 					exiting={FadeOut}
 					layout={Layout}
 					topSpacing='s3'>
-					<TypographyComponent size='sm' color={TypographyColorEnum.Error}>
+					<TypographyComponent
+						testID='swap.form.error.amount'
+						size='sm'
+						color={TypographyColorEnum.Error}>
 						{t('swap.form.error.amount')}
 					</TypographyComponent>
 				</SpacingComponent>
@@ -116,7 +119,10 @@ export const SwapFormComponent = () => {
 					exiting={FadeOut}
 					layout={Layout}
 					topSpacing='s5'>
-					<TypographyComponent size='sm' color={TypographyColorEnum.Error}>
+					<TypographyComponent
+						testID='swap.form.tx-error'
+						size='sm'
+						color={TypographyColorEnum.Error}>
 						{apiSquidRouterGetErrorMessage(txError)}
 					</TypographyComponent>
 				</SpacingComponent>

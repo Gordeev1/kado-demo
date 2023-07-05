@@ -1,35 +1,27 @@
 module.exports = {
-	testRunner: {
-		args: {
-			$0: 'jest',
-			config: './jest-e2e.config.js',
-		},
-		jest: { setupTimeout: 120000 },
-	},
+	specs: './e2e',
+	testRunner: 'jest',
+	runnerConfig: './jest-e2e.config.js',
 	apps: {
 		'ios.debug': {
 			type: 'ios.app',
 			binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/Kado.app',
-			build:
-				'RN_SRC_EXT=e2e.ts xcodebuild -workspace ios/Kado.xcworkspace -scheme Kado -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build EXCLUDED_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES -quiet',
+			build: 'RN_SRC_EXT=e2e.ts xcodebuild -workspace ios/Kado.xcworkspace -scheme Kado -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build EXCLUDED_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES -quiet',
 		},
 		'ios.release': {
 			type: 'ios.app',
 			binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/Kado.app',
-			build:
-				'export RCT_NO_LAUNCH_PACKAGER=true && RN_SRC_EXT=e2e.ts xcodebuild -workspace ios/Kado.xcworkspace -scheme Kado -configuration Release -sdk iphonesimulator -derivedDataPath ios/build ONLY_ACTIVE_ARCH=YES -quiet',
+			build: 'export RCT_NO_LAUNCH_PACKAGER=true && RN_SRC_EXT=e2e.ts xcodebuild -workspace ios/Kado.xcworkspace -scheme Kado -configuration Release -sdk iphonesimulator -derivedDataPath ios/build ONLY_ACTIVE_ARCH=YES -quiet',
 		},
 		'android.debug': {
 			type: 'android.apk',
 			binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
-			build:
-				'cd android; RN_SRC_EXT=e2e.ts ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug ; cd -',
+			build: 'cd android; RN_SRC_EXT=e2e.ts ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug ; cd -',
 		},
 		'android.release': {
 			type: 'android.apk',
 			binaryPath: 'android/app/build/outputs/apk/release/app-release.apk',
-			build:
-				'cd android; RN_SRC_EXT=e2e.ts ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release ; cd -',
+			build: 'cd android; RN_SRC_EXT=e2e.ts ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release ; cd -',
 		},
 	},
 	devices: {
@@ -48,7 +40,7 @@ module.exports = {
 		'android.attached': {
 			type: 'android.attached',
 			device: {
-				adbName: 'b10579e',
+				adbName: '1B141FDF6001LP',
 			},
 		},
 	},

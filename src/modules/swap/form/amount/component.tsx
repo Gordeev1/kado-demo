@@ -31,6 +31,7 @@ export const SwapFormAmountComponent: FC<SwapFormAmountComponentPropsInterface> 
 				<SpacingComponent topSpacing='s2'>
 					{/* TODO: add mask */}
 					<InputTextComponent
+						testID='swap.form.amount-input'
 						keyboardType='decimal-pad'
 						numberOfLines={1}
 						filter={formValueEligible.filters.number}

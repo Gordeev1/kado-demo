@@ -29,6 +29,7 @@ export const SwapFormQuoteComponent: FC<SwapFormQuoteComponentPropsInterface> = 
 							<ActivityIndicator />
 						) : (
 							<TypographyComponent
+								testID='swap.form.quote.amount'
 								numberOfLines={1}
 								color={
 									value ? TypographyColorEnum.Main : TypographyColorEnum.Secondary
