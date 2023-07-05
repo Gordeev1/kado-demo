@@ -6,5 +6,52 @@
 		"title": "Error has occurred",
 		"unknown": "Something went wrong",
 		"network": "Network error, please check your connection and try again."
+	},
+	"feature-unavailable-alert": {
+		"title": "Sorry",
+		"description": "This feature is not yet available"
+	},
+	"swap": {
+		"main": {
+			"title": "Swap"
+		},
+		"form": {
+			"amount": {
+				"label": "Pay"
+			},
+			"quote": {
+				"label": "Receive"
+			},
+			"source": {
+				"label": "From",
+				"connect": "Connect",
+				"unsupported": {
+					"title": "Seems like your wallet doesn't support {{ currency }}",
+					"description": "Connect another one to continue",
+					"actions": {
+						"ok": "OK"
+					}
+				}
+			},
+			"destination": {
+				"label": "To",
+				"connect": "Add address"
+			},
+			"fee": {
+				"label": "Fees",
+				"empty": "Enter correct amount to see estimates"
+			},
+			"error": {
+				"amount": "Amount seems to be invalid."
+			},
+			"actions": {
+				"review": "Review"
+			}
+		}
+	},
+	"resource": {
+		"chain": {
+			"on": "on {{ chain }}"
+		}
 	}
 }
