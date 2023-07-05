@@ -91,7 +91,14 @@ const darkTheme: CoreThemeInterface = {
 	},
 };
 
-const lightTheme: CoreThemeInterface = merge({}, darkTheme);
+const lightTheme: CoreThemeInterface = merge({}, darkTheme, {
+	colors: {
+		main: palette['dark-1-100'],
+		background: palette['white-10-100'],
+		'card-background': palette['purple-7-20'],
+		'icon-primary': palette['dark-1-100'],
+	},
+});
 
 export const coreThemeValues: Record<CoreThemeTypeEnum, CoreThemeInterface> = {
 	[CoreThemeTypeEnum.Light]: lightTheme,
